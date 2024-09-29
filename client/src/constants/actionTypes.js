@@ -1,0 +1,31 @@
+const CREATE = 'CREATE';
+const DELETE = 'DELETE';
+const FETCH_ALL = 'FETCH_ALL';
+const FETCH_BY_SEARCH = 'FETCH_BY_SEARCH';
+const FETCH_POST = 'FETCH_POST';
+const UPDATE = 'UPDATE';
+const LIKE = 'LIKE';
+const COMMENT = 'COMMENT'
+
+const FETCH_BY_CREATOR = 'FETCH_BY_CREATOR'
+
+const START_LOADING = 'START_LOADING'
+const END_LOADING = 'END_LOADING'
+
+const AUTH = 'AUTH';
+const LOGOUT = 'LOGOUT';
+export {
+    CREATE, 
+    DELETE, 
+    LIKE,
+    COMMENT,
+    FETCH_ALL,
+    FETCH_BY_SEARCH,
+    FETCH_POST, 
+    UPDATE,
+    AUTH,
+    LOGOUT,
+    START_LOADING,
+    END_LOADING,
+    FETCH_BY_CREATOR
+}
