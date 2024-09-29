@@ -73,3 +73,4 @@ build/
 # Ignore entire directory but allow specific files
 node_modules/*
 !node_modules/package-name/README.md
+!node_modules/express/LICENSE
