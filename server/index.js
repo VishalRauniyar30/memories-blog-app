@@ -20,8 +20,9 @@ app.use(bodyParser.urlencoded({
     extended : true
 }))
 const corsOptions = {
-    origin: [process.env.FRONTEND_URL], // Update this to match your frontend URL
-    optionsSuccessStatus: 200
+    origin: ['https://memories-blog-app-client.vercel.app'], // Include the frontend URL here
+    methods: ['GET', 'POST', 'PATCH', 'DELETE'],  // Add the methods you're using
+    credentials: true,  // Allow credentials (if required)
 }
 
 app.use(cors(corsOptions)) // Use CORS with the specified options
