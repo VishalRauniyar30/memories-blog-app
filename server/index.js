@@ -19,13 +19,8 @@ app.use(bodyParser.urlencoded({
     limit : "30mb",
     extended : true
 }))
-const corsOptions = {
-    origin: ['https://memories-blog-app-client.vercel.app'], // Include the frontend URL here
-    methods: ['GET', 'POST', 'PATCH', 'DELETE'],  // Add the methods you're using
-    credentials: true,  // Allow credentials (if required)
-}
 
-app.use(cors(corsOptions)) // Use CORS with the specified options
+app.use(cors()) // Use CORS with the specified options
 
 app.use('/posts', postRoutes)
 app.use('/user', userRoutes)
