@@ -20,11 +20,11 @@ app.use(bodyParser.urlencoded({
     extended : true
 }))
 const corsOptions = {
-    origin : ['https://memories-blog-of3362oz1-vishalrauniyar30s-projects.vercel.app'],
+    origin: ['https://memories-blog-app-client.vercel.app'], // Update this to match your frontend URL
+    optionsSuccessStatus: 200
 }
 
-
-app.use(cors())
+app.use(cors(corsOptions)) // Use CORS with the specified options
 app.use('/posts', postRoutes)
 app.use('/user', userRoutes)
 
