@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(cors(
     {
-        origin : ['https://memories-blog-of3362oz1-vishalrauniyar30s-projects.vercel.app/'],
+        origin : ['https://memories-blog-of3362oz1-vishalrauniyar30s-projects.vercel.app'],
         methods : ["POST", "GET", "PATCH", "DELETE"],
         credentials : true
     }
