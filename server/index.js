@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
     extended : true
 }))
 
-app.use(cors()) // Use CORS with the specified options
+app.use(cors({ origin : 'https://memories-blog-app-client.vercel.app/' })) // Use CORS with the specified options
 
 app.use('/posts', postRoutes)
 app.use('/user', userRoutes)
