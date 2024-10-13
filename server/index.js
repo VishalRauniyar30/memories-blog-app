@@ -19,14 +19,12 @@ app.use(bodyParser.urlencoded({
     limit : "30mb",
     extended : true
 }))
+const corsOptions = {
+    origin : ['https://memories-blog-of3362oz1-vishalrauniyar30s-projects.vercel.app'],
+}
 
-app.use(cors(
-    {
-        origin : ['https://memories-blog-of3362oz1-vishalrauniyar30s-projects.vercel.app'],
-        methods : ["POST", "GET", "PATCH", "DELETE"],
-        credentials : true
-    }
-))
+
+app.use(cors())
 app.use('/posts', postRoutes)
 app.use('/user', userRoutes)
 
