@@ -26,6 +26,7 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions)) // Use CORS with the specified options
+
 app.use('/posts', postRoutes)
 app.use('/user', userRoutes)
 
@@ -33,8 +34,8 @@ app.get('/', (req, res) => {
     res.send('APP IS RUNNING')
 })
 
-const connectionUrl = process.env.CONNECTION_URL;
-const port = process.env.PORT || 8000
+const connectionUrl = 'mongodb+srv://Vishal_Rauniyar02:Vishal123456@niket30.xqmwbfn.mongodb.net/?retryWrites=true&w=majority&appName=Niket30'
+const port = 8000
 
 
 mongoose.connect(connectionUrl)

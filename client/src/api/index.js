@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // const API = axios.create({ baseURL: 'http://localhost:8000' });
-const API = axios.create({ baseURL: import.meta.env.VITE_API_BASE_URL });
+const API = axios.create({ baseURL: 'https://memories-blog-app-server.vercel.app' });
 
 
 API.interceptors.request.use((req) => {
