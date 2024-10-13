@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({
     extended : true
 }))
 const corsOptions = {
-    origin: ['https://memories-blog-app-client.vercel.app'], // Update this to match your frontend URL
+    origin: [process.env.FRONTEND_URL], // Update this to match your frontend URL
     optionsSuccessStatus: 200
 }
 
