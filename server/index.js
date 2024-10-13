@@ -20,7 +20,13 @@ app.use(bodyParser.urlencoded({
     extended : true
 }))
 
-app.use(cors())
+app.use(cors(
+    {
+        origin : ['https://memories-blog-of3362oz1-vishalrauniyar30s-projects.vercel.app/'],
+        methods : ["POST", "GET", "PATCH", "DELETE"],
+        credentials : true
+    }
+))
 app.use('/posts', postRoutes)
 app.use('/user', userRoutes)
 
