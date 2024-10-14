@@ -2,12 +2,12 @@ import { makeStyles } from "@mui/styles";
 
 const AuthStyles = makeStyles((theme) => ({
     paper : {
-        marginTop : theme.spacing(8),
-        display : 'flex',
-        flexDirection : 'column',
-        alignItems : 'center',
+        marginTop : `${theme.spacing(8)} !important`,
+        display : 'flex !important',
+        flexDirection : 'column !important',
+        alignItems : 'center !important',
         // padding : theme.spacing(2),
-        padding : "10px 30px",
+        padding : "10px 30px !important",
         borderRadius : '10px !important',
         // padding : "40px"
     },
@@ -30,7 +30,7 @@ const AuthStyles = makeStyles((theme) => ({
         marginBottom : '10px !important'
     },
     googleButton : {
-        marginBottom : theme.spacing(2)
+        marginBottom : `${theme.spacing(2)} !important`
     }
 }))
 

@@ -3,36 +3,36 @@ import { makeStyles } from "@mui/styles";
 
 const CreatorOrTagStyles = makeStyles((theme) => ({
     container: {
-        padding: theme.spacing(4),
+        padding: `${theme.spacing(4)} !important`,
         [theme.breakpoints.down('sm')]: {
-            padding: theme.spacing(2),
+            padding: `${theme.spacing(2)} !important`,
         },
     },
     title: {
-        marginBottom: theme.spacing(2),
-        fontWeight: 'bold',
-        textAlign: 'center',
-        color : 'gray',
+        marginBottom: `${theme.spacing(2)} !important`,
+        fontWeight: 'bold !important',
+        textAlign: 'center !important',
+        color : 'gray !important',
         // backgroundColor : 'aqua',
         // border : '2px solid black',
         // borderRadius : '20px'
     },
     divider: {
-        margin : '20px 0 50px 0',
+        margin : '20px 0 50px 0 !important',
     },
     noPosts: {
-        textAlign: 'center',
-        fontSize: '1.5rem',
-        color: theme.palette.text.secondary,
+        textAlign: 'center !important',
+        fontSize: '1.5rem !important',
+        color: `${theme.palette.text.secondary} !important`,
     },
     gridContainer: {
         [theme.breakpoints.down('sm')]: {
-            justifyContent: 'center',
+            justifyContent: 'center !important',
         },
     },
     circularProgress: {
-        display: 'block',
-        margin: 'auto',
+        display: 'block !important',
+        margin: 'auto !important',
     },
 }))
 

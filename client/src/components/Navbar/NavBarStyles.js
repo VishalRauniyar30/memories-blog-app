@@ -5,15 +5,15 @@ import { deepPurple } from "@mui/material/colors"
 const NavbarStyles = makeStyles((theme) => ({
     appBar : {
         borderRadius : 15,
-        margin : '30px 0',
+        margin : '30px 0 !important',
         display : 'flex !important',
         flexDirection : 'row !important',
         justifyContent : 'space-between',
-        alignItems : 'center',
-        padding : '10px 50px',
+        alignItems : 'center !important',
+        padding : '10px 50px !important',
         backgroundColor : "#e4821a !important" ,
         [theme.breakpoints.down('sm')]: {
-            flexDirection: 'column',
+            flexDirection: 'column !important',
         },
     },
     heading : {
@@ -23,37 +23,37 @@ const NavbarStyles = makeStyles((theme) => ({
         fontWeight: 300,
     },
     image : {
-        marginLeft : '40px',
-        marginTop: '5px',
+        marginLeft : '40px !important',
+        marginTop: '5px !important',
     },
     toolbar : {
-        display : 'flex',
-        justifyContent : 'flex-end',
-        width : '400px',
+        display : 'flex !important',
+        justifyContent : 'flex-end !important',
+        width : '400px !important',
         [theme.breakpoints.down('sm')]: {
-            width: 'auto',
+            width: 'auto !important',
         },
     },
     profile : {
-        display: 'flex',
-        justifyContent: 'space-between',
-        width: '400px',
-        alignItems: 'center',
+        display: 'flex !important',
+        justifyContent: 'space-between !important',
+        width: '400px !important',
+        alignItems: 'center !important',
         [theme.breakpoints.down('sm')]: {
-            width: 'auto',
+            width: 'auto !important',
             marginTop: 20,
-            justifyContent: 'center',
+            justifyContent: 'center !important',
         },
     },
     userName : {
-        display : 'flex',
-        alignItems : 'center',
-        textAlign : 'center'
+        display : 'flex !important',
+        alignItems : 'center !important',
+        textAlign : 'center !important'
         // backgroundColor:'blue !important'
     },
     brandContainer : {
-        display : 'flex',
-        alignItems : 'center'
+        display : 'flex !important',
+        alignItems : 'center !important'
     },
     purple : {
         color : theme.palette.getContrastText(deepPurple[500]),
@@ -62,7 +62,7 @@ const NavbarStyles = makeStyles((theme) => ({
     },
     logout : {
         backgroundColor : 'red !important',
-        borderRadius : '10px',
+        borderRadius : '10px !important',
         // color : 'wheat !important'
     }
 }))
